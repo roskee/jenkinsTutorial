@@ -1,6 +1,6 @@
 <html>
 <body>
-<h2>Hello World!</h2>
-<p>This app was successfully deployed to Tomcat Server using Jenkins</p>
+<h1>Hello World!</h1>
+<h2>This app was successfully deployed to Tomcat Server using Jenkins</h2>
 </body>
 </html>
