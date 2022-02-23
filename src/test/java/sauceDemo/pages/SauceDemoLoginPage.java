@@ -8,6 +8,10 @@ import org.openqa.selenium.support.PageFactory;
 public class SauceDemoLoginPage {
     final WebDriver driver;
     public static final String LOGIN_PAGE_URL = "https://www.saucedemo.com/";
+    public static final String URL_LEADING = "https://www.";
+    public static final String URL_MAIN = "sauce";
+    public static final String URL_ENDING = ".com";
+    public static final String ENVIRONMENT = "demo";
     public static final String USER_NAME = "standard_user";
     public static final String PASSWORD="secret_sauce";
     @FindBy(id = "user-name")

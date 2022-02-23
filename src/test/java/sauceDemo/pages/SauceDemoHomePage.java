@@ -17,6 +17,7 @@ public class SauceDemoHomePage {
     @FindBy(id = "react-burger-menu-btn") WebElement menuBtn;
     By logoutBtn = By.id("logout_sidebar_link");
     @FindBy(xpath = "//button[starts-with(@id,'add-to-cart')]")
+            // mobile apium
     List<WebElement> addToCartBtns;
     @FindBy(xpath = "//a[@class='shopping_cart_link']") WebElement addToCartCounter;
     By removeBtns = By.xpath("//button[starts-with(@id,'remove')]");
@@ -49,7 +50,6 @@ public class SauceDemoHomePage {
     public void clickLogoutBtn(){
         WebElement logout = driver.findElement(logoutBtn);
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
-        wait.until(ExpectedConditions.visibilityOf(logout));
         wait.until(ExpectedConditions.elementToBeClickable(logout));
         logout.click();
 
