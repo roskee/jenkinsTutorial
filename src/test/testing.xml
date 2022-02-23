@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Sauce Demo Test Suite">
+    <test name="Launch Test">
+
+        <classes>
+            <class name="sauceDemo.testers.LaunchTester"/>
+        </classes>
+    </test>
+    <test name="Items Checkout Test">
+        <classes><class name="sauceDemo.testers.ItemsCheckoutTester"/></classes>
+    </test>
+    <test name="Locked Out User Test">
+        <classes><class name="sauceDemo.testers.LockedOutUserTester"/></classes>
+    </test>
+    <test name="Exit Browser Test">
+        <classes>
+            <class name="sauceDemo.testers.ExitTester"/>
+        </classes>
+    </test>
+</suite>
