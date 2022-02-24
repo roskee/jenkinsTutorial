@@ -23,7 +23,7 @@ pipeline {
         stage("deploy"){
             steps{
                 echo "deploying"
-                deploy adapters: [tomcat9(credentialsId: '6d426c1f-4969-4535-bbbb-39da8b2c44e7', path: '', url: 'http://localhost:8083/')], contextPath: 'mvnwebapp', onFailure: false, war: '**/*.war'
+                deploy adapters: [tomcat9(credentialsId: 'c1da4a22-cdae-4ff0-8915-f5965d932a91', path: '', url: 'http://localhost:8082/')], contextPath: 'mavenwebapp', war: '*/*.war'
             }
         }
     }
